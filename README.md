@@ -13,6 +13,10 @@ That's what this is. I'll be writing about different things here and maybe also 
 - easy to use
 - classic and elegant design
 
+## Demo :see_no_evil:
+
+You can visit the deployed web app here: [VISIT](https://blvckuncrn.pythonanywhere.com/):see_no_evil:.
+
 ## Setup :hammer:
 
 If you want to try out this site for yourself, make sure you have the following tools installed:
