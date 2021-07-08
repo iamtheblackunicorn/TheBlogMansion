@@ -1,0 +1,20 @@
+{% block content %}
+{
+  {% for post in posts.all %}
+  {% if post.pk == posts.last.pk %}
+  "{{ post.title }}": [
+    "{{ post.description }}",
+    "{{ post.date }}",
+    "{{ post.banner }}",
+    "{{ post.body }}",
+  ]
+  {% else %}
+  "{{ post.title }}": [
+    "{{ post.description }}",
+    "{{ post.date }}",
+    "{{ post.banner }}",
+    "{{ post.body }}",
+  ],
+  {% endfor %}
+}
+{% endblock %}
