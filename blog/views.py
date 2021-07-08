@@ -9,7 +9,7 @@ def public(request):
     posts = Post.objects.all()
     return render(
       request,
-      'posts/overview.html',
+      'blog/overview.html',
       {
         'posts':posts
       }
@@ -21,23 +21,28 @@ def single(request, pk):
     banner = post.banner
     description = post.description
     date = post.date
-    author = post.author
+    duration = str(round(len(body.split(' '))/250, 0)).split('.')[0]
+    if duration == '0':
+        duration = '1'
+    else:
+        pass
     return render(
       request,
-      'posts/post.html',
+      'blog/post.html',
       {
         'title': title,
         'body': body,
         'banner': banner,
         'description': description,
         'date': date,
+        'duration': duration
       }
     )
 def api(request):
     posts = Post.objects.all()
     return render(
       request,
-      'posts/api.html',
+      'blog/api.html',
       {
         'posts':posts
       }
