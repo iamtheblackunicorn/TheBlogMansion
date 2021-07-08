@@ -1,0 +1,22 @@
+{% block content %}
+{% load static %}
+  <!DOCTYPE html>
+  <html>
+    <head>
+    </head>
+    <body>
+     {% if posts.all %}
+       {% for post in posts.all %}
+         <h1>{{ post.title }}</h1>
+         <p>{{ post.body }}</p>
+         <p>{{ post.pk }}</p>
+         <button onclick="window.location.href='{% url 'posts:single' pk=post.pk %}'">
+           READ
+         </button>
+       {% endfor %}
+     {% else %}
+       <p>Such empty.</p>
+     {% endif %}
+    </body>
+  </html>
+{% endblock %}
