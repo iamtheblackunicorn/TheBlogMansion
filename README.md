@@ -7,6 +7,12 @@
 Because I saw the movie *The Fifth Estate*, I got the bright idea to practice some Python + Django and restart my blog!
 That's what this is. I'll be writing about different things here and maybe also sometimes also other people will write things here.
 
+## Features :test_tube:
+
+- polished and optimized code
+- easy to use
+- classic and elegant design
+
 ## Setup :hammer:
 
 If you want to try out this site for yourself, make sure you have the following tools installed:
@@ -45,6 +51,13 @@ $ pipenv shell
 ## Contributing :pick:
 Fork the repository, execute the steps from above, make the changes you need, and test them.
 Once you have done that, push your changes and file a pull request. I will review it and merge it if it adds value.
+
+## Changelog :black_nib:
+
+### Version 1.0.0: ***Initial release***
+
+- This is the initial release of *The Blog Mansion*.
+- Optimized and polished.
 
 ## Note :scroll:
 
