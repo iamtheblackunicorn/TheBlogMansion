@@ -7,7 +7,7 @@ from pathlib import Path
 BASE_DIR = BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'jgjc=c*5px%@e$d27gp$mp%po)$=o@i&0jrh_bj7377gm$2+e4'
 DEBUG = False
-ALLOWED_HOSTS = ['li1665-58.members.linode.com']
+ALLOWED_HOSTS = ['blvckuncrn.pythonanywhere.com']
 SECURE_HSTS_PRELOAD = True
 SECURE_HSTS_SECONDS = 1
 SECURE_CONTENT_TYPE_NOSNIFF = True
