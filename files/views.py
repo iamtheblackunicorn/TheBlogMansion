@@ -18,5 +18,5 @@ def authorize(request):
             #1234567892356894
             return redirect('files:download', authCode=actualCode)
     else:
-        form = AuthForm(request.POST)
+        form = AuthForm()
     return render(request, 'files/form.html', {'form': form})

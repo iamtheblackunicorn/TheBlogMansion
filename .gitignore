@@ -3,3 +3,7 @@ __pycache__
 *_initial.py
 *.lock
 .DS_Store
+!media/files/keeper.py
+media/files/*
+!media/blog/keeper.py
+media/blog
