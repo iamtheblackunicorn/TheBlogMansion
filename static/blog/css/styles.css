@@ -4,13 +4,13 @@ BY THE BLACK UNICORN. LICENSED UNDER THE MIT
 LICENSE.
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+
 :root {
   --main-color: #FFFFFF;
   --accent-color: #000000;
   --tertiary-color: #808080;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
 body {
   font-family: 'Cormorant Garamond', serif;
   background-color: var(--main-color);
