@@ -14,7 +14,7 @@
 
 <div class="content">
  <h2>AUTHORIZATION CODE</h2>
- <form method="POST" action="{% url 'blog:overview' %}">
+ <form method="POST">
  {% csrf_token %}
  {{ form.as_p }}
  </form>

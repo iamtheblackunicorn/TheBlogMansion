@@ -11,4 +11,5 @@ app_name = 'blog'
 urlpatterns = [
   url(r'^$', public, name='overview'),
   path('post/<int:pk>', single, name='single'),
+  path('api', api, name='api'),
 ]
