@@ -5,9 +5,18 @@
 import os
 from pathlib import Path
 BASE_DIR = BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SECRET_KEY = 'django-insecure-i76wq4c9%+%wbxlj)*aaz&(k2tz1xj&u3v*us)p=&ehw#(0j(y'
-DEBUG = True
-ALLOWED_HOSTS = ['*']
+SECRET_KEY = 'jgjc=c*5px%@e$d27gp$mp%po)$=o@i&0jrh_bj7377gm$2+e4'
+DEBUG = False
+ALLOWED_HOSTS = ['blvckuncrn.pythonanywhere.com']
+SECURE_HSTS_PRELOAD = True
+SECURE_HSTS_SECONDS = 1
+SECURE_CONTENT_TYPE_NOSNIFF = True
+SECURE_BROWSER_XSS_FILTER = True
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+X_FRAME_OPTIONS = 'DENY'
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -69,9 +78,7 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
 MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

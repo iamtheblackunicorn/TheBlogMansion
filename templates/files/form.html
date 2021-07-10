@@ -1,0 +1,28 @@
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+
+{% include "blog/includes/head.html" %}
+
+<body>
+
+  {% include "blog/includes/h1.html" %}
+  {% include "blog/includes/breaker.html" %}
+
+<div class="content">
+ <h2>AUTHORIZATION CODE</h2>
+ <form method="POST" action="{% url 'blog:overview' %}">
+ {% csrf_token %}
+ {{ form.as_p }}
+ </form>
+ <p><button type="submit">Send</button></p>
+</div>
+
+</body>
+
+</html>
+
+{% endblock %}

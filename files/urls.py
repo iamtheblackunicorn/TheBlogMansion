@@ -6,9 +6,9 @@ from django.conf.urls import url
 from django.urls import path
 from .views import *
 
-app_name = 'blog'
+app_name = 'files'
 
 urlpatterns = [
-  url(r'^$', public, name='overview'),
-  path('post/<int:pk>', single, name='single'),
+  path('assets', authorize, name='auth'),
+  path('asset/<str:authCode>', download, name='download')
 ]

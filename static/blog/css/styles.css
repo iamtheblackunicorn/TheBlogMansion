@@ -117,6 +117,35 @@ img {
   display: block;
 }
 
+input[type=text] {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #000;
+  width: 200px;
+  font-family: 'Cormorant Garamond', serif;
+  outline: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+input[type=text]:focus {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #000;
+  width: 200px;
+  font-family: 'Cormorant Garamond', serif;
+}
+label {
+  font-family: 'Cormorant Garamond', serif;
+  outline: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+ul.errorlist {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   div.content {
     width: 40%;

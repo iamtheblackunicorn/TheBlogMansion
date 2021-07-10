@@ -1,5 +1,6 @@
 {% block content %}
 {
+  {% if posts.all %}
   {% for post in posts.all %}
   {% if post.pk == posts.last.pk %}
   "{{ post.title }}": [
@@ -16,5 +17,8 @@
     "{{ post.body }}",
   ],
   {% endfor %}
+  {% else %}
+  "200":"OK"
+  {% endif %}
 }
 {% endblock %}
