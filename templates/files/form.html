@@ -14,10 +14,11 @@
 
 <div class="content">
  <h2>AUTHORIZATION CODE</h2>
- <form method="POST">
+ <form method="post">
+ {% csrf_token %}
  {{ form.as_p }}
- </form>
  <p><button type="submit">Send</button></p>
+ </form>
 </div>
 
 </body>

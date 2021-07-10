@@ -6,4 +6,6 @@ __pycache__
 !media/files/keeper.py
 media/files/*
 !media/blog/keeper.py
-media/blog/*
+media/blog/*.png
+media/blog/*.jpg
+*.lock
