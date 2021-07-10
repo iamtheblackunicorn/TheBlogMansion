@@ -63,6 +63,11 @@ Once you have done that, push your changes and file a pull request. I will revie
 - This is the initial release of *The Blog Mansion*.
 - Optimized and polished.
 
+### Version 2.0.0: ***Krypton***
+
+- This release adds a gateway for storing files.
+- Further styling improvements.
+
 ## Note :scroll:
 
 - *The Blog Mansion :unicorn: :black_heart:* by Alexander Abraham :black_heart: a.k.a. *"The Black Unicorn" :unicorn:*
