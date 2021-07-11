@@ -54,7 +54,7 @@ $ pipenv shell
 
 ## Contributing :pick:
 Fork the repository, execute the steps from above, make the changes you need, and test them.
-Once you have done that, push your changes and file a pull request. I will review it and merge it if it adds value.
+Once you have done that, push your changes and file a Pull Request. I will review it and merge it if it adds value.
 
 ## Changelog :black_nib:
 
